@@ -1,0 +1,97 @@
+let posts = [];
+const translations = {
+    en: {
+        siteTitle: "WisaBlabla",
+        newPostTitle: "Add New Post",
+        postTitlePlaceholder: "Post Title",
+        postContentPlaceholder: "Write your content here...",
+        addPostButton: "Add Post",
+        allPostsTitle: "All Posts",
+        likeButton: "Like",
+        commentsTitle: "Comments",
+        addCommentButton: "Add Comment",
+        commentPlaceholder: "Write a comment..."
+    },
+    th: {
+        siteTitle: "WisaBlabla",
+        newPostTitle: "เพิ่มโพสต์ใหม่",
+        postTitlePlaceholder: "หัวข้อเรื่อง",
+        postContentPlaceholder: "เขียนข้อความที่นี่...",
+        addPostButton: "เพิ่มโพสต์",
+        allPostsTitle: "โพสต์ทั้งหมด",
+        likeButton: "ถูกใจ",
+        commentsTitle: "ความคิดเห็น",
+        addCommentButton: "เพิ่มความคิดเห็น",
+        commentPlaceholder: "เขียนความคิดเห็น..."
+    },
+    fr: {
+        siteTitle: "WisaBlabla",
+        newPostTitle: "Ajouter un nouveau post",
+        postTitlePlaceholder: "Titre du post",
+        postContentPlaceholder: "Écrivez votre contenu ici...",
+        addPostButton: "Ajouter un post",
+        allPostsTitle: "Tous les posts",
+        likeButton: "Aimer",
+        commentsTitle: "Commentaires",
+        addCommentButton: "Ajouter un commentaire",
+        commentPlaceholder: "Écrivez un commentaire..."
+    },
+    sv: {
+        siteTitle: "WisaBlabla",
+        newPostTitle: "Lägg till nytt inlägg",
+        postTitlePlaceholder: "Inläggstitel",
+        postContentPlaceholder: "Skriv ditt innehåll här...",
+        addPostButton: "Lägg till inlägg",
+        allPostsTitle: "Alla inlägg",
+        likeButton: "Gilla",
+        commentsTitle: "Kommentarer",
+        addCommentButton: "Lägg till kommentar",
+        commentPlaceholder: "Skriv en kommentar..."
+    },
+    es: {
+        siteTitle: "WisaBlabla",
+        newPostTitle: "Agregar nueva publicación",
+        postTitlePlaceholder: "Título de la publicación",
+        postContentPlaceholder: "Escribe tu contenido aquí...",
+        addPostButton: "Agregar publicación",
+        allPostsTitle: "Todas las publicaciones",
+        likeButton: "Me gusta",
+        commentsTitle: "Comentarios",
+        addCommentButton: "Agregar comentario",
+        commentPlaceholder: "Escribe un comentario..."
+    },
+    zh: {
+        siteTitle: "WisaBlabla",
+        newPostTitle: "新增帖子",
+        postTitlePlaceholder: "帖子标题",
+        postContentPlaceholder: "在这里写下您的内容...",
+        addPostButton: "新增帖子",
+        allPostsTitle: "所有帖子",
+        likeButton: "点赞",
+        commentsTitle: "评论",
+        addCommentButton: "添加评论",
+        commentPlaceholder: "写评论..."
+    },
+    de: {
+        siteTitle: "WisaBlabla",
+        newPostTitle: "Neuen Beitrag hinzufügen",
+        postTitlePlaceholder: "Beitragstitel",
+        postContentPlaceholder: "Schreiben Sie hier Ihren Inhalt...",
+        addPostButton: "Beitrag hinzufügen",
+        allPostsTitle: "Alle Beiträge",
+        likeButton: "Gefällt mir",
+        commentsTitle: "Kommentare",
+        addCommentButton: "Kommentar hinzufügen",
+        commentPlaceholder: "Schreibe einen Kommentar..."
+    },
+    pl: {
+        siteTitle: "WisaBlabla",
+        newPostTitle: "Dodaj nowy post",
+        postTitlePlaceholder: "Tytuł posta",
+        postContentPlaceholder: "Napisz tutaj swoją treść...",
+        addPostButton: "Dodaj post",
+        allPostsTitle: "Wszystkie posty",
+        likeButton: "Lubię to",
+        commentsTitle: "Komentarze",
+        addCommentButton: "Dodaj komentarz",
+        commentPlaceholder:

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WisaBlabla</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Meta Tags สำหรับ SEO -->
+    <meta name="description" content="WisaBlabla - A multilingual website for sharing and commenting on posts.">
+    <meta name="keywords" content="WisaBlabla, multilingual, posts, comments, like, share">
+    <meta name="author" content="Your Name">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 data-key="siteTitle">WisaBlabla</h1>
+            <select id="language-select" onchange="changeLanguage()">
+                <option value="en">🇺🇸 English</option>
+                <option value="th" selected>🇹🇭 ไทย</option>
+                <option value="fr">🇫🇷 Français</option>
+                <option value="sv">🇸🇪 Svenska</option>
+                <option value="es">🇪🇸 Español</option>
+                <option value="zh">🇨🇳 中文</option>
+                <option value="de">🇩🇪 Deutsch</option>
+                <option value="pl">🇵🇱 Polski</option>
+            </select>
+        </header>
+        <main>
+            <section class="new-post">
+                <h2 data-key="newPostTitle">เพิ่มโพสต์ใหม่</h2>
+                <input type="text" id="post-title" placeholder="หัวข้อเรื่อง" data-placeholder-key="postTitlePlaceholder">
+                <textarea id="post-content" placeholder="เขียนข้อความที่นี่..." data-placeholder-key="postContentPlaceholder"></textarea>
+                <input type="file" id="post-image">
+                <button onclick="addPost()" data-key="addPostButton">เพิ่มโพสต์</button>
+            </section>
+            <section class="posts">
+                <h2 data-key="allPostsTitle">โพสต์ทั้งหมด</h2>
+                <div id="posts-list"></div>
+            </section>
+        </main>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
